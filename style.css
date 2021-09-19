@@ -1,0 +1,286 @@
+/*Css for all*/
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 10px;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-white{
+    color: white;
+}
+
+
+.clearfix{
+    clear: both;
+    float: none;
+
+}
+a{
+    color: #ff7675;
+    text-decoration: none;
+}
+a:hover{
+    color: #fab1a0;
+}
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color:#fab1a0 ;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    background-color:#ff7675 ;
+}
+h2{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 2%;
+    
+}
+h3{
+    font-size: 1.5rem;
+}
+.float-container{
+    position: relative;
+    
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+
+
+/* Css for navbar section*/
+.logo{
+    
+    width: 10%;
+    float: left;
+}
+.Menu{
+    line-height: 60px;
+}
+.Menu ul{
+    list-style-type: none;
+}
+.Menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+/*Css for Food search section*/
+.Food-search{
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7% 0;
+}
+.Food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+}
+
+/*Css for Categories*/
+.Categories{
+    padding: 4% 0;
+
+}
+.box-3{
+   
+    width: 25%;
+    float: left ;
+    margin: 3%;
+
+}
+/*Css for food menu*/
+.Food-menu{
+    background-color: #dfe6e9;
+    padding: 1%;
+}
+.Food-menu-box{
+   
+    width: 43%;
+    margin: 1%;
+    
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+.Food-menu-img{
+    width: 20%;
+    float: left;
+}
+.Food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+.food-price{
+    font-size: 1.2rem;
+    margin: 1% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #b2bec3;
+}
+/* Css for Social */
+.Social ul{
+    list-style-type: none;
+}
+.Social ul li{
+    display: inline;
+    padding: 1px;
+}
+/* Css for order */
+
+/* Css for mobie size */
+@media screen and (max-width:600px) {
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+    .Menu ul{
+        text-align: center;
+    }
+    .Food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 2%;
+
+    }
+    .btn{
+        width: 90%;
+        padding: 1%;
+    }
+    .Food-search{
+        padding: 10% 0;
+    }
+    .Categories{
+        padding: 20% 0;
+    }
+    .box-3{
+        width: 95%;
+        margin: 2% auto;
+    }
+
+}
+/* Css test*/
+
+#content--body {
+	margin-top: 82px;
+	background-image: url(images/bg.jpg);
+	padding: 7% 0;
+	background-size: cover;
+	background-position: center;
+}
+.content--body--list {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1%;
+}
+.content--body--list > h2 {
+	font-size: 26px;
+	color: #fff;
+	text-align: center;
+}
+.list--items {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction:column;
+}
+.list--items fieldset {
+	display: flex;
+	border: 1px solid white;
+	padding: 2%;
+	border-radius: 5px;
+	width: 46%;
+}
+.list--items fieldset + fieldset {
+	flex-direction: column;
+	margin-top: 25px;
+}
+.items--img {
+	width: 22%;
+}
+.items--img img {
+	border-radius: 15px;
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+.items--dsc {
+	width: 70%;
+	margin-left: 8%;
+	margin-top: -20px;
+}
+.items--dsc h2 {
+	margin: 16px 4px 0 0;
+}
+.items--dsc h3 {
+	font-weight: normal;
+	margin: 4px 0;
+}
+.order--label {
+	font-weight: bold;
+	margin: 4px 0;
+}
+.item--number {
+	border: 1px solid #ccc;
+	width: 100%;
+	border-radius: 5px;
+	padding: 4px 0;
+	margin: 4px 0;
+}
+.order--input {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin: 4px 0;
+}
+.text--address {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+.confirm--btn {
+	padding: 2%;
+	width: 38%;
+	font-size: 1rem;
+	color: #fff;
+	background-color: #ff6b81;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-top: 12px;
+}
+.confirm--btn:hover {
+	background-color: #ff4757;
+	cursor: pointer;
+}
